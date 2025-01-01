@@ -1,0 +1,2 @@
+# Floating-Point Precision Issues in Conditional Statements
+This example demonstrates a subtle bug that can occur in Julia when dealing with floating-point numbers near zero in conditional statements.  The `elseif x == 0` condition might not behave as expected due to floating-point precision limitations.  This can lead to unexpected results or incorrect program behavior.  The solution involves using tolerances to compare floating-point numbers instead of direct equality checks.
